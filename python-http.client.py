@@ -1,10 +1,10 @@
 import http.client
 import json
 
-conn = http.client.HTTPSConnection("localhost", 8080)
+conn = http.client.HTTPSConnection("127.0.0.1", 8080)
 payload = json.dumps({
   "stream": False,
-  "n_predict": 8,
+  "n_predict": -1,
   "temperature": 0.7,
   "stop": [
     "</s>",
