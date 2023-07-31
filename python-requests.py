@@ -1,11 +1,11 @@
 import requests
 import json
 
-url = "http://localhost:8080/completion"
+url = "http://127.0.0.1:8080/completion"
 
 payload = json.dumps({
   "stream": False,
-  "n_predict": 8,
+  "n_predict": -1,
   "temperature": 0.7,
   "stop": [
     "</s>",
